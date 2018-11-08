@@ -1,0 +1,10 @@
+.button{
+    width: 42px;
+}
+.delete{
+    float: right; 
+    cursor: pointer;
+}
+.main{
+    width : 215px;
+}
