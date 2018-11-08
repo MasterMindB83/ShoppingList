@@ -14,8 +14,10 @@ export class AppComponent {
     this.refreshData();
   }
   addItem() {
+    if (this.add) {
     this.data.saveItem(this.add).subscribe((data) => console.log('Item added'));
     this.refreshData();
+    }
   }
   removeItem(name) {
       this.data.deleteItem(name).subscribe((data) => console.log('Item deleted'));
